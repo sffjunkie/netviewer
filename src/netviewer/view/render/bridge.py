@@ -19,7 +19,7 @@ def bridge_address_render(address: Interface, indent: int = 0) -> None:
 def bridge_render(bridge: Bridge, detail: bool = False, indent: int = 0) -> None:
     print_info(f'{bridge["name"]}:')
     devices = ", ".join(bridge["devices"])
-    print_key_value_oneline(f"devices:", devices, indent=indent + 1)
+    print_key_value_oneline("devices:", devices, indent=indent + 1)
 
     bridge_address = bridge["interface"]
     interface_render(bridge_address, detail, indent=indent, show_name=False)

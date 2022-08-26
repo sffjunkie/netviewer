@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from netviewer.config import _config, config_load  # type: ignore
+from netviewer.config import config_load  # type: ignore
 from netviewer.context import _console  # type: ignore
 from netviewer.ip import bridge, interface
 from netviewer.view import rich_init

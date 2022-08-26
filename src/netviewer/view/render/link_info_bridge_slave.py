@@ -7,7 +7,7 @@ from .utils import bool_str, mcast_router_str, on_off_str
 def bridge_slave_link_info_render(
     info: LinkInfoBridgeSlave, detail: bool = False, indent: int = 0
 ) -> None:
-    print_key_oneline(f"bridge slave:", indent=indent)
+    print_key_oneline("bridge slave:", indent=indent)
     print_key_value_oneline("bridge id:", info["bridge_id"], indent=indent + 1)
     print_key_value_oneline("root id:", info["root_id"], indent=indent + 1)
     print_key_value_oneline("state:", info["state"], indent=indent + 1)

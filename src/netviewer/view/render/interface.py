@@ -1,7 +1,4 @@
-from typing import cast
-
 from netviewer.config import _config  # type: ignore
-from netviewer.model.link_info import LinkInfo
 from netviewer.model.inet import INetInfo
 from netviewer.model.interface import Interface
 from netviewer.view.console import (
@@ -22,7 +19,7 @@ def interface_sort_key(interface: Interface) -> tuple[int, int, str]:
 
 
 def ipv4_info_render(inet: INetInfo, indent: int = 0) -> None:
-    print_key_oneline(f"ipv4:", indent=indent + 1)
+    print_key_oneline("ipv4:", indent=indent + 1)
     print_key_value_oneline("scope:", f"{inet['scope']}", indent=indent + 2)
     print_key_value_oneline(
         "ip:", f'{inet["local"]}/{inet["prefix_length"]}', indent=indent + 2
@@ -39,7 +36,7 @@ def ipv4_info_render(inet: INetInfo, indent: int = 0) -> None:
 
 def ipv6_info_render(inet: INetInfo, indent: int = 0) -> None:
     print_key_oneline("ipv6:", indent=indent + 1)
-    print_key_value_oneline("scope:", f"{inet['scope']}", indent=indent + 2)
+    print_key_value_oneline("scope:", inet["scope"], indent=indent + 2)
     print_key_value_oneline(
         "ip:", f'{inet["local"]}/{inet["prefix_length"]}', indent=indent + 2
     )
@@ -56,9 +53,7 @@ def inet_info_render(info: list[INetInfo], indent: int = 0):
             ipv6_info_render(inet, indent)
 
         if inet["preferred_lifetime"] == -1 or inet["preferred_lifetime"] == 0xFFFFFFFF:
-            print_key_value_oneline(
-                "preferred lifetime:", f"forever", indent=indent + 2
-            )
+            print_key_value_oneline("preferred lifetime:", "forever", indent=indent + 2)
         else:
             print_key_value_oneline(
                 "preferred lifetime:",
@@ -67,7 +62,7 @@ def inet_info_render(info: list[INetInfo], indent: int = 0):
             )
 
         if inet["valid_lifetime"] == -1 or inet["valid_lifetime"] == 0xFFFFFFFF:
-            print_key_value_oneline("valid lifetime:", f"forever", indent=indent + 2)
+            print_key_value_oneline("valid lifetime:", "forever", indent=indent + 2)
         else:
             print_key_value_oneline(
                 "valid lifetime:",
@@ -194,7 +189,7 @@ def interface_render(
             )
 
         link_info = interface.get("link_info", None)
-        if link_info != None:
+        if link_info is not None:
             link_info_render(link_info)
 
 

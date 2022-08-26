@@ -21,30 +21,30 @@ def vlan_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
 
 
 def stp_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
-    print_key_oneline(f"stp:", indent=indent)
+    print_key_oneline("stp:", indent=indent)
     print_key_value_oneline(
         "state:",
         f'{enabled_str(info["stp_state"])}',
         indent=indent + 1,
     )
-    print_key_value_oneline(f"priority:", info["priority"], indent=indent + 1)
+    print_key_value_oneline("priority:", info["priority"], indent=indent + 1)
     print_key_value_oneline(
         "hello timer:",
         f'{enabled_str(info["hello_timer"])}',
         indent=indent + 1,
     )
-    print_key_value_oneline(f"hello time:", f'{info["hello_time"]}s', indent=indent + 1)
-    print_key_value_oneline(f"maximum age:", f'{info["max_age"]}s', indent=indent + 1)
+    print_key_value_oneline("hello time:", f'{info["hello_time"]}s', indent=indent + 1)
+    print_key_value_oneline("maximum age:", f'{info["max_age"]}s', indent=indent + 1)
     print_key_value_oneline(
-        f"forward delay:", f'{info["forward_delay"]}s', indent=indent + 1
+        "forward delay:", f'{info["forward_delay"]}s', indent=indent + 1
     )
     print_key_value_oneline(
-        f"ageing time:", f'{info["ageing_time"]}s', indent=indent + 1
+        "ageing time:", f'{info["ageing_time"]}s', indent=indent + 1
     )
 
 
 def hooks_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
-    print_key_oneline(f"hooks:", indent=indent)
+    print_key_oneline("hooks:", indent=indent)
     print_key_value_oneline(
         "iptables:", f'{enabled_str(info["nf_call_iptables"])}', indent=indent + 1
     )
@@ -63,7 +63,7 @@ def root_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
 
 
 def multicast_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
-    print_key_oneline(f"multicast:", indent=indent)
+    print_key_oneline("multicast:", indent=indent)
     print_key_value_oneline(
         "router:", f'{mcast_router_str(info["mcast_router"])}', indent=indent + 1
     )
@@ -79,7 +79,7 @@ def multicast_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
         "querier:", f'{enabled_str(info["mcast_querier"])}', indent=indent + 1
     )
     print_key_value_oneline(
-        f"querier interval:", f'{info["mcast_querier_intvl"]}s', indent=indent + 1
+        "querier interval:", f'{info["mcast_querier_intvl"]}s', indent=indent + 1
     )
     print_key_value_oneline(
         "hash elasticity:",
@@ -93,7 +93,7 @@ def multicast_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
         indent=indent + 1,
     )
     print_key_value_oneline(
-        f"last member interval:",
+        "last member interval:",
         f'{info["mcast_last_member_intvl"]}s',
         indent=indent + 1,
     )
@@ -103,7 +103,7 @@ def multicast_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
         indent=indent + 1,
     )
     print_key_value_oneline(
-        f"startup query interval:",
+        "startup query interval:",
         f'{info["mcast_startup_query_intvl"]}s',
         indent=indent + 1,
     )
@@ -113,12 +113,12 @@ def multicast_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
         indent=indent + 1,
     )
     print_key_value_oneline(
-        f"query response interval:",
+        "query response interval:",
         f'{info["mcast_query_response_intvl"]}s',
         indent=indent + 1,
     )
     print_key_value_oneline(
-        f"membership interval:",
+        "membership interval:",
         f'{info["mcast_membership_intvl"]}s',
         indent=indent + 1,
     )
@@ -142,7 +142,7 @@ def multicast_info_render(info: LinkInfoBridge, indent: int = 0) -> None:
 def bridge_link_info_render(
     info: LinkInfoBridge, detail: bool = False, indent: int = 0
 ) -> None:
-    print_key_value_oneline(f"bridge id:", info["bridge_id"], indent=indent)
+    print_key_value_oneline("bridge id:", info["bridge_id"], indent=indent)
     root_info_render(info, indent=indent)
     vlan_info_render(info, indent=indent)
     stp_info_render(info, indent=indent)

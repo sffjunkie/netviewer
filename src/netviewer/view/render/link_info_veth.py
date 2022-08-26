@@ -6,5 +6,5 @@ from netviewer.view.render.link_info_bridge_slave import bridge_slave_link_info_
 def veth_link_info_render(
     info: LinkInfoVeth, detail: bool = False, indent: int = 0
 ) -> None:
-    print_key_oneline(f"veth:", indent=indent)
+    print_key_oneline("veth:", indent=indent)
     bridge_slave_link_info_render(info["slave"], indent=indent + 1)

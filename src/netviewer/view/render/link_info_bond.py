@@ -21,7 +21,7 @@ def arp_validate_render(arp_validate: str | int | None, indent: int = 0) -> None
     else:
         validate = validate_int[arp_validate]
 
-    print_key_value_oneline(f"ARP validate:", validate, indent=indent)
+    print_key_value_oneline("ARP validate:", validate, indent=indent)
 
 
 # https://www.kernel.org/doc/html/latest/networking/bonding.html
