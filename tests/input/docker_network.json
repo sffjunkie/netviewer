@@ -1,0 +1,143 @@
+// Used docker network ls --format '{{ json . }}' | jq --slurp
+[
+    {
+        "CreatedAt": "2021-12-11 11:55:00.65592548 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "6d2c1b545269",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "backend",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-07-07 11:51:26.040777147 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "7ece361f51cb",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "bridge",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2021-11-08 19:05:45.996072908 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "84b03375ddbd",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.network=default,com.docker.compose.project=dms,com.docker.compose.version=2.1.0",
+        "Name": "dms_default",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-03-22 13:24:45.107360005 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "a7117e917bc0",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "home",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-07-07 14:57:59.562189847 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "327a7ac473e4",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "home-proxy",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-03-14 11:33:33.52587078 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "b5b43198e8df",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "homelab",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-03-14 11:33:47.511334087 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "caae6618697e",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "homelab-proxy",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2021-11-07 18:24:14.117949921 +0000 UTC",
+        "Driver": "host",
+        "ID": "da7cb3a2c52b",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "host",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2021-12-11 14:15:08.323146949 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "e86655e4d691",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.network=default,com.docker.compose.project=mongo-express,com.docker.compose.version=2.1.0",
+        "Name": "mongo-express_default",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2021-11-07 18:24:14.097267471 +0000 UTC",
+        "Driver": "null",
+        "ID": "f4f16be164e8",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "none",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2021-11-07 18:28:18.147147311 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "2b7fb292cbfb",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "proxy-net",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-06-30 13:01:34.272184724 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "b44682efab0d",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.network=default,com.docker.compose.project=radicale,com.docker.compose.version=2.1.0",
+        "Name": "radicale_default",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-03-10 14:06:32.01845472 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "8c374fab280a",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.network=default,com.docker.compose.project=unifi,com.docker.compose.version=2.1.0",
+        "Name": "unifi_default",
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2022-06-29 16:45:58.51751223 +0000 UTC",
+        "Driver": "bridge",
+        "ID": "cc98178a5892",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.project=zigbee2mqtt,com.docker.compose.version=2.1.0,com.docker.compose.network=default",
+        "Name": "zigbee2mqtt_default",
+        "Scope": "local"
+    }
+]

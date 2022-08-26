@@ -1,0 +1,139 @@
+[
+    {
+        "dst": "default",
+        "gateway": "10.0.0.1",
+        "dev": "ens18",
+        "protocol": "dhcp",
+        "prefsrc": "10.0.1.1",
+        "metric": 100,
+        "flags": []
+    },
+    {
+        "dst": "10.0.0.0/21",
+        "dev": "ens18",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "10.0.1.1",
+        "metric": 100,
+        "flags": []
+    },
+    {
+        "dst": "10.0.0.1",
+        "dev": "ens18",
+        "protocol": "dhcp",
+        "scope": "link",
+        "prefsrc": "10.0.1.1",
+        "metric": 100,
+        "flags": []
+    },
+    {
+        "dst": "172.17.0.0/16",
+        "dev": "docker0",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.17.0.1",
+        "flags": [
+            "linkdown"
+        ]
+    },
+    {
+        "dst": "172.18.0.0/16",
+        "dev": "br-2b7fb292cbfb",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.18.0.1",
+        "flags": []
+    },
+    {
+        "dst": "172.19.0.0/16",
+        "dev": "br-84b03375ddbd",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.19.0.1",
+        "flags": [
+            "linkdown"
+        ]
+    },
+    {
+        "dst": "172.20.0.0/16",
+        "dev": "br-8c374fab280a",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.20.0.1",
+        "flags": [
+            "linkdown"
+        ]
+    },
+    {
+        "dst": "172.21.0.0/16",
+        "dev": "br-b5b43198e8df",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.21.0.1",
+        "flags": [
+            "linkdown"
+        ]
+    },
+    {
+        "dst": "172.22.0.0/16",
+        "dev": "br-6d2c1b545269",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.22.0.1",
+        "flags": [
+            "linkdown"
+        ]
+    },
+    {
+        "dst": "172.23.0.0/16",
+        "dev": "br-caae6618697e",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.23.0.1",
+        "flags": [
+            "linkdown"
+        ]
+    },
+    {
+        "dst": "172.24.0.0/16",
+        "dev": "br-e86655e4d691",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.24.0.1",
+        "flags": [
+            "linkdown"
+        ]
+    },
+    {
+        "dst": "172.25.0.0/16",
+        "dev": "br-a7117e917bc0",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.25.0.1",
+        "flags": []
+    },
+    {
+        "dst": "172.26.0.0/16",
+        "dev": "br-cc98178a5892",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.26.0.1",
+        "flags": []
+    },
+    {
+        "dst": "172.27.0.0/16",
+        "dev": "br-b44682efab0d",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.27.0.1",
+        "flags": []
+    },
+    {
+        "dst": "172.29.0.0/16",
+        "dev": "br-327a7ac473e4",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "172.29.0.1",
+        "flags": []
+    }
+]

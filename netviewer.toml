@@ -1,0 +1,20 @@
+[theme]
+"default" = "white"
+"error" = "red"
+"warning" = "yellow"
+"info" = "green"
+"key" = "blue"
+"value" = "white"
+
+# Element visibility
+# One of "normal", "hidden", "lowlight", "highlight"
+[visibility]
+# ".Header" = "normal"
+
+# set svg or html to the output filename
+[output]
+# svg =
+# html =
+
+[output.options]
+# width = 100
