@@ -182,3 +182,7 @@ bond0:
         LACP aggregation selection logic: stable
         tb mode dynamic shuffling: 1
 ```
+
+## Package Status
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sffjunkie/netviewer/netviewer-test) ![PyPI - Downloads](https://img.shields.io/pypi/dm/netviewer)
