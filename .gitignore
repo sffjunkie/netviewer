@@ -4,6 +4,7 @@ __pycache__
 .pytest_cache
 .python-version
 .vscode
+.ipynb_checkpoints
 /dist
 /file
 out.txt
