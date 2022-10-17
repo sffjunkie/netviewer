@@ -43,6 +43,7 @@ exclude = [
     "dist",
     ".venv",
     ".ipynb_checkpoints",
+    "poetry.lock",
 ]
 
 [build-system]
