@@ -11,15 +11,6 @@ packages = [
     { include = "netviewer/py.typed", from = "src" },
 ]
 
-[tool.isort]
-profile = "black"
-lines_between_sections = 1
-
-[tool.pytest.ini_options]
-pythonpath = [
-    "src"
-]
-
 [tool.poetry.scripts]
 netviewer = 'netviewer.__main__:run'
 
@@ -35,6 +26,13 @@ typing-extensions = "^4.3.0"
 pytest = "^7.1.2"
 flake8 = "^5.0.4"
 Flake8-pyproject = "^1.1.0.post0"
+
+[tool.isort]
+profile = "black"
+lines_between_sections = 1
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
 
 [tool.flake8]
 max-line-length = 88
