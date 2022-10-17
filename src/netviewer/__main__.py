@@ -98,7 +98,8 @@ def run(
 @click.pass_context
 @click.argument("interfaces", required=False, nargs=-1)
 def interface(ctx: click.core.Context, interfaces: tuple[str, ...]):
-    """Print information about a specific interfaces or all interfaces if none specified.
+    """Print information about a specific interfaces
+    or all interfaces if none specified.
 
     e.g. 'netviewer interface eth0' prints information about the eth0 interface
     and 'netviewer interface' prints information about all interfaces
