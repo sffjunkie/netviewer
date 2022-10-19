@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from netviewer.ip import interface, link, route, bridge
+from netviewer.ip import bridge, interface, link, route
 
 
 def test_parse_link():

@@ -5,7 +5,7 @@ from typing import Any
 import click
 
 import netviewer.ip
-from netviewer.config import config_load, maybe, _config  # type: ignore
+from netviewer.config import _config, config_load, maybe  # type: ignore
 from netviewer.context import _console  # type: ignore
 from netviewer.view import console, rich_init
 from netviewer.view.render.bridge import (
