@@ -5,11 +5,16 @@ description = "iproute2 network information viewer"
 authors = ["Simon Kennedy <sffjunkie+code@gmail.com>"]
 license = "Apache-2.0"
 readme = "ReadMe.md"
+homepage = "https://github.com/sffjunkie/netviewer"
+repository = "https://github.com/sffjunkie/netviewer"
 
 packages = [
     { include = "netviewer", from = "src" },
     { include = "netviewer/py.typed", from = "src" },
 ]
+
+[tool.poetry.urls]
+"Issue Tracker" = "https://github.com/sffjunkie/netviewer/issues"
 
 [tool.poetry.scripts]
 netviewer = 'netviewer.__main__:run'
